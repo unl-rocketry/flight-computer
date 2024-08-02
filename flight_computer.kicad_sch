@@ -4240,6 +4240,17 @@
 		)
 		(uuid "0d21dbe3-ec1c-4dee-bf67-e7fa39b23733")
 	)
+	(label "Ignitor Terminal 2"
+		(at 118.11 25.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "12469d72-7a89-4aa9-921f-fe46d6dafa36")
+	)
 	(label "Ignitor Terminal 1"
 		(at 86.36 77.47 180)
 		(fields_autoplaced yes)
@@ -4261,17 +4272,6 @@
 			(justify left bottom)
 		)
 		(uuid "26215be8-6806-4a09-9476-3e5c5ec2ac78")
-	)
-	(label "Ignitor Terminal 2"
-		(at 118.11 25.4 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "283d0acd-da15-4aba-8346-32b74743a477")
 	)
 	(label "SCL"
 		(at 16.51 54.61 0)
@@ -4306,6 +4306,17 @@
 		)
 		(uuid "3eb76632-1b0c-4cdd-9587-8843705e4d48")
 	)
+	(label "Ignitor Terminal 3"
+		(at 118.11 22.86 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "72e51074-1f04-465a-ba7c-1a36f7cfa6ce")
+	)
 	(label "Ignitor Logic 1 +"
 		(at 25.4 33.02 0)
 		(fields_autoplaced yes)
@@ -4339,7 +4350,18 @@
 		)
 		(uuid "7d81f2b9-3710-4d17-b68b-9f1288b8563b")
 	)
-	(label "Ignitor Terminal GND"
+	(label "Ignitor Terminal 1"
+		(at 118.11 27.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "82a0af1c-7dcb-47f9-a0cd-2eef85a8261e")
+	)
+	(label "Ignitor Terminal +"
 		(at 88.9 109.22 180)
 		(fields_autoplaced yes)
 		(effects
@@ -4361,7 +4383,7 @@
 		)
 		(uuid "c960c86c-5161-49d9-935f-6ed45fe91fbf")
 	)
-	(label "Ignitor Terminal GND"
+	(label "Ignitor Terminal +"
 		(at 113.03 36.83 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4382,17 +4404,6 @@
 			(justify right bottom)
 		)
 		(uuid "dd15d9a6-8ca4-4a3e-a058-887445b8e334")
-	)
-	(label "Ignitor Terminal 3"
-		(at 118.11 27.94 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e5c20f7a-0f00-4c64-9fd9-fdb34c2232c9")
 	)
 	(label "SDA"
 		(at 261.62 49.53 180)
@@ -4415,17 +4426,6 @@
 			(justify left bottom)
 		)
 		(uuid "ec67f374-14d3-4a82-8b3a-672a719ef9d4")
-	)
-	(label "Ignitor Terminal 1"
-		(at 118.11 22.86 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f9740c4d-e926-411e-b606-be01ca748102")
 	)
 	(label "Ignitor Logic 3 +"
 		(at 25.4 38.1 0)
@@ -4626,7 +4626,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 26.67 53.848 90)
 			(effects
 				(font
@@ -5700,7 +5700,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 26.67 44.958 90)
 			(effects
 				(font
