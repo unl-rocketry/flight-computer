@@ -458,7 +458,9 @@
       "version": 3
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "Net-(J3-Pin_4)": "Ignitor Terminal GND"
+    },
     "netclass_patterns": []
   },
   "pcbnew": {
