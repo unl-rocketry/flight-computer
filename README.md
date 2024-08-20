@@ -4,9 +4,9 @@ The unpopulated pin header is meant to host an
 [Adafruit KB2040](https://www.adafruit.com/product/5302) as a processor
 daughterboard, to reduce board complexity.
 
-This design is licensed under the `CERN Open Hardware Licence Version 2 - Strongly
-Reciprocal`. This is to encourage contributions and collaboration on this project
-from anyone interested in the project. Contributions are welcome!
+This design is licensed under the **CERN-OHL-S v2 or any later version**. This is 
+to  encourage contributions and collaboration on this project from anyone interested 
+in the project. Contributions are welcome!
 
 # Design Information
 This design should be capable of using input voltages from 3v → 17v on the
