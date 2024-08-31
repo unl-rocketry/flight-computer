@@ -52,7 +52,12 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "copper_edge_clearance|120600000|72050000|6faf1837-1979-4f20-b8c9-e526115d0ceb|7f0bb65b-d1ac-475f-b701-f285418f9e60",
+        "copper_edge_clearance|120600000|77650000|6faf1837-1979-4f20-b8c9-e526115d0ceb|210f5c9c-0535-4121-9e01-1d66839ed594",
+        "copper_edge_clearance|120600000|80050000|6faf1837-1979-4f20-b8c9-e526115d0ceb|c7f61f94-4c9a-4134-a3c5-b79aabc38fba",
+        "copper_edge_clearance|120600000|85650000|6faf1837-1979-4f20-b8c9-e526115d0ceb|da131e98-00d9-49c8-855c-7c445da53e75"
+      ],
       "meta": {
         "version": 2
       },
@@ -97,7 +102,7 @@
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
         "text_height": "warning",
-        "text_thickness": "warning",
+        "text_thickness": "ignore",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_dangling": "warning",
@@ -499,7 +504,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "",
+    "bom_export_filename": "bom.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",

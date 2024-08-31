@@ -10060,7 +10060,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "33.768kHz"
+		(property "Value" "32.768kHz"
 			(at 266.446 106.934 0)
 			(effects
 				(font
