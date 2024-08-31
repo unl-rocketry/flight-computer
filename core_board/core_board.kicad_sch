@@ -6956,17 +6956,6 @@
 		)
 		(uuid "0099d2e4-1832-4ed8-9b84-cb378e1261db")
 	)
-	(label "SDA Inter Board"
-		(at 44.45 146.05 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0c6c862b-d719-4584-92e9-65917bbac492")
-	)
 	(label "Ignitor Logic 3 +"
 		(at 15.24 97.79 0)
 		(fields_autoplaced yes)
@@ -7099,6 +7088,28 @@
 		)
 		(uuid "57b08603-9293-4487-8140-69ec4c6d666b")
 	)
+	(label "SDA Inter Board"
+		(at 44.45 143.51 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5b196d84-f333-4f42-a8e9-980ff349d5d1")
+	)
+	(label "SCL Inter Board"
+		(at 44.45 128.27 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "603d32eb-c411-410b-b719-8e5c7c9fd317")
+	)
 	(label "Ignitor Terminal 3"
 		(at 118.11 22.86 0)
 		(fields_autoplaced yes)
@@ -7154,6 +7165,17 @@
 		)
 		(uuid "82a0af1c-7dcb-47f9-a0cd-2eef85a8261e")
 	)
+	(label "SDA Inter Board"
+		(at 44.45 130.81 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8bd0583d-9fbc-45de-b415-d29257d6fce5")
+	)
 	(label "SPI SDI"
 		(at 21.59 22.86 0)
 		(fields_autoplaced yes)
@@ -7199,7 +7221,7 @@
 		(uuid "a207af52-69b9-4a05-9ab1-293645371b7e")
 	)
 	(label "SCL Inter Board"
-		(at 44.45 143.51 0)
+		(at 44.45 140.97 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7207,18 +7229,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "c5794dae-b0e7-4dbe-a6f0-27baf8f5d74a")
-	)
-	(label "SDA Inter Board"
-		(at 44.45 133.35 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c90cc308-78e6-4035-8835-56d14601811a")
+		(uuid "c53b1ace-2e17-4667-8fee-c3e82083bac2")
 	)
 	(label "Ignitor Logic 2 +"
 		(at 21.59 35.56 0)
@@ -7241,17 +7252,6 @@
 			(justify right bottom)
 		)
 		(uuid "dd15d9a6-8ca4-4a3e-a058-887445b8e334")
-	)
-	(label "SCL Inter Board"
-		(at 44.45 130.81 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ddeb9f48-f140-444d-aa98-c6832bb76c84")
 	)
 	(label "SDA"
 		(at 261.62 49.53 180)
@@ -7836,6 +7836,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 44.45 135.89 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1820857b-9706-4d57-8dab-205e54870d86")
+		(property "Reference" "#PWR031"
+			(at 38.1 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 40.64 135.8899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 44.45 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "364dbbad-88b7-4e13-880b-6262ddd4418e")
+		)
+		(instances
+			(project "core_board"
+				(path "/d1f95e7e-c47f-4536-a77e-9f553fe58a7a"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x04_Socket")
 		(at 71.12 143.51 0)
 		(unit 1)
@@ -7863,7 +7930,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_PicoBlade_53047-0410_1x04_P1.25mm_Vertical"
+		(property "Footprint" "G2Custom:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical-CUSTOM"
 			(at 71.12 143.51 0)
 			(effects
 				(font
@@ -8569,73 +8636,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 44.45 135.89 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3bfe3f53-0116-4f1a-b836-c467d3351724")
-		(property "Reference" "#PWR031"
-			(at 38.1 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 40.64 135.8899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 44.45 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "006c426f-3f7d-4cfd-80a6-5180ba607602")
-		)
-		(instances
-			(project ""
-				(path "/d1f95e7e-c47f-4536-a77e-9f553fe58a7a"
-					(reference "#PWR031")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 87.63 25.4 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9080,7 +9080,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_PicoBlade_53047-0410_1x04_P1.25mm_Vertical"
+		(property "Footprint" "G2Custom:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical-CUSTOM"
 			(at 71.12 130.81 0)
 			(effects
 				(font
@@ -11737,6 +11737,140 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 44.45 146.05 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e6383ee8-5897-4dc1-a62a-994819a4d519")
+		(property "Reference" "#PWR033"
+			(at 48.26 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 40.64 146.0499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 44.45 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eedc3cc8-1c7e-4029-9f13-f1121001e549")
+		)
+		(instances
+			(project "core_board"
+				(path "/d1f95e7e-c47f-4536-a77e-9f553fe58a7a"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 44.45 133.35 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e758e3be-20d4-4ab4-b9e4-218cacd1b890")
+		(property "Reference" "#PWR030"
+			(at 48.26 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 40.64 133.3499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 44.45 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "22eaba81-c05f-438c-9ed6-bf7671de28c2")
+		)
+		(instances
+			(project "core_board"
+				(path "/d1f95e7e-c47f-4536-a77e-9f553fe58a7a"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 217.17 130.81 270)
 		(unit 1)
@@ -11865,73 +11999,6 @@
 			(project "flight_computer"
 				(path "/d1f95e7e-c47f-4536-a77e-9f553fe58a7a"
 					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 44.45 128.27 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f323418e-d3a8-4e3e-affb-bb3cf00d9785")
-		(property "Reference" "#PWR030"
-			(at 48.26 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 40.64 128.2699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 44.45 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a811cb2e-b35f-455a-aba9-19e327abb13a")
-		)
-		(instances
-			(project ""
-				(path "/d1f95e7e-c47f-4536-a77e-9f553fe58a7a"
-					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -12131,73 +12198,6 @@
 			(project "flight_computer"
 				(path "/d1f95e7e-c47f-4536-a77e-9f553fe58a7a"
 					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 44.45 140.97 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f5fbb3bb-c604-4528-8191-cdc43e740317")
-		(property "Reference" "#PWR033"
-			(at 48.26 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 40.64 140.9699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 44.45 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bf686794-918d-4914-bd97-614de4fa0de8")
-		)
-		(instances
-			(project ""
-				(path "/d1f95e7e-c47f-4536-a77e-9f553fe58a7a"
-					(reference "#PWR033")
 					(unit 1)
 				)
 			)
