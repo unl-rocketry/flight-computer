@@ -43,5 +43,7 @@ All programmable components of this board were selected to be compatible with
 Rust-based microcontroller frameworks like Embassy, for ease of programming and
 future extension of software capabilities.
 
-# Image
-![image](https://github.com/user-attachments/assets/24aaa132-3298-4307-a318-a837f41479aa)
+# Images
+![image](https://github.com/user-attachments/assets/87352d8a-534a-4b80-9714-bdddbc8457b1)
+
+![image](https://github.com/user-attachments/assets/b0c1558c-01a1-4dfb-afaf-35e44925488f)
