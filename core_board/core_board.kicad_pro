@@ -48,16 +48,11 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.25
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [
-        "copper_edge_clearance|120600000|72050000|6faf1837-1979-4f20-b8c9-e526115d0ceb|7f0bb65b-d1ac-475f-b701-f285418f9e60",
-        "copper_edge_clearance|120600000|77650000|6faf1837-1979-4f20-b8c9-e526115d0ceb|210f5c9c-0535-4121-9e01-1d66839ed594",
-        "copper_edge_clearance|120600000|80050000|6faf1837-1979-4f20-b8c9-e526115d0ceb|c7f61f94-4c9a-4134-a3c5-b79aabc38fba",
-        "copper_edge_clearance|120600000|85650000|6faf1837-1979-4f20-b8c9-e526115d0ceb|da131e98-00d9-49c8-855c-7c445da53e75"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -117,7 +112,7 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_copper_edge_clearance": 0.3,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
