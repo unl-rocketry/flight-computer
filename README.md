@@ -1,15 +1,13 @@
 # Flight Computer
-A versatile flight computer based around (currently) the RP2040 microprocessor.
-The unpopulated pin header is meant to host an
-[Adafruit KB2040](https://www.adafruit.com/product/5302) as a processor
-daughterboard, to reduce board complexity.
+A versatile, inexpensive, modular, and **open source** flight computer and altimeter
+system for amateur and experimental rocketry.
 
-This design is licensed under the **CERN-OHL-S v2 or any later version**. This is 
-to  encourage contributions and collaboration on this project from anyone interested 
-in the project. Contributions are welcome!
+All designs in this repository are licensed under the [**CERN-OHL-S v2 or any later 
+version**](https://ohwr.org/project/cernohl/-/wikis/uploads/b236492596cfc91c12def7d50bbf7da0/cern_ohl_s_v2.pdf). 
+Contributions are welcome!
 
-# Design Information
-This design should be capable of using input voltages from 3v → 17v on the
+# Core Board
+This design should be capable of using input voltages from 3v → 16v on the
 battery input to allow for a wide range of batteries to be used. It is designed
 to control and independently fire up to 3 individual high power in-flight events
 (eg. ejection charges).
@@ -21,29 +19,26 @@ pressure (along with altitude), temperature, and humidity measurements. These
 sensor measurements can be used for flight control, and can also be logged to a
 MicroSD card mounted on the board for ease of data recovery.
 
-## Extensibility
-Additionally, the major feature of this board is the ability to be expanded by
-connecting via an I2C (and hopefully in the future CAN Bus) connection to other
-boards and sensors with the same connectors. These expansion  boards could
-provide additional capabilities while being modular for quickly swapping and
-replacing parts.
-
-Such capabilities could include:
- - GPS and other location packages
- - Radio transmitters for rangefinding, and telemetry
- - Additional motion sensors in other parts of the rocket
- - Controlling other electronic devices such as servos, cameras, etc.
-
-This would allow for both expansion, and could allow for cheap sensors to be
-placed in otherwise dangerous places on a rocket, where a more expensive board
-would make no sense.
-
 ## Toolchain Support
 All programmable components of this board were selected to be compatible with
 Rust-based microcontroller frameworks like Embassy, for ease of programming and
 future extension of software capabilities.
 
-# Images
-![image](https://github.com/user-attachments/assets/87352d8a-534a-4b80-9714-bdddbc8457b1)
+## Images
+![front](https://github.com/user-attachments/assets/3bca23d6-af98-49bf-b8da-e52f9ee6c4af)
 
-![image](https://github.com/user-attachments/assets/b0c1558c-01a1-4dfb-afaf-35e44925488f)
+![back](https://github.com/user-attachments/assets/7c1cdd4c-f01e-4e7c-a63b-401bbc89d1e1)
+
+# Expansion Modules
+A major feature of the Core Board is the ability to be expanded by
+connecting via an I2C (and hopefully in the future CAN Bus) connection to other
+boards and sensors with the same connectors. These expansion  boards could
+provide additional capabilities while being modular for quickly swapping and
+replacing parts.
+
+The connectors on the Core Board are compatible with any Adafruit Stemma QT or 
+SparkFun Qwiic board, which immediately provides for a lot of options for
+sensors without any design or soldering work needed.
+
+In the future, this repository will host the KiCad files for expansion boards
+created by UNL Aerospace Rocketry.
